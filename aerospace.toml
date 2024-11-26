@@ -197,6 +197,8 @@ alt-shift-j = ['join-with down', 'mode main']
 alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
+### You can get a list of apps id by running "aerospace list-apps"
+
 [[on-window-detected]]
 if.app-id = 'com.google.Chrome'
 run = 'move-node-to-workspace B'
@@ -232,6 +234,10 @@ run = 'move-node-to-workspace V'
 [[on-window-detected]]
 if.app-id = 'com.apple.finder'
 run = 'move-node-to-workspace F'
+
+[[on-window-detected]]
+if.app-id = 'com.nomachine.nxdock'
+run = 'move-node-to-workspace N'
 
 [[on-window-detected]]
 check-further-callbacks = true
